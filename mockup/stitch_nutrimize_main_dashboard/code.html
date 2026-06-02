@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nutrimize - Analitik Sisa Pangan</title>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#10b981", // Emerald Green
+                        "brandGreen": "#10b981",
+                        "background-light": "#f8fafd",
+                        "background-dark": "#0f172a",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Public Sans', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .filled-icon {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+<div class="flex h-screen overflow-hidden">
+<!-- Sidebar (Restored from SCREEN_12) -->
+<aside class="w-64 bg-white border-r border-gray-200 hidden md:flex flex-col sticky top-0 h-screen" data-purpose="sidebar-navigation">
+<div class="p-6 border-b border-gray-100 flex items-center gap-2">
+<div class="w-8 h-8 bg-brandGreen rounded-lg flex items-center justify-center">
+<svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<span class="text-2xl font-bold text-brandGreen tracking-tight">Nutrimize</span>
+</div>
+<nav class="flex-1 px-4 py-6 space-y-1">
+<a class="flex items-center px-4 py-3 text-sm font-medium text-slate-600 hover:bg-gray-50 rounded-lg transition-colors" href="#">
+<svg class="w-5 h-5 mr-3 text-slate-400" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M4 6a2 2 0 012-2h2a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v12a2 2 0 01-2 2h-2a2 2 0 01-2-2V6z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg> 
+                Dasbor Utama
+            </a>
+<a class="flex items-center px-4 py-3 text-sm font-medium text-slate-600 hover:bg-gray-50 rounded-lg transition-colors" href="#">
+<svg class="w-5 h-5 mr-3 text-slate-400" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg> 
+                Kalkulator Menu AI
+            </a>
+<a class="flex items-center px-4 py-3 text-sm font-medium text-slate-600 hover:bg-gray-50 rounded-lg transition-colors" href="#">
+<svg class="w-5 h-5 mr-3 text-slate-400" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg> 
+                Pasar Logistik UMKM
+            </a>
+<a class="flex items-center px-4 py-3 text-sm font-semibold text-brandGreen bg-emerald-50 rounded-lg group" href="#">
+<svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg> 
+                Analitik Sisa Pangan
+            </a>
+</nav>
+<div class="p-4 border-t border-gray-100 mt-auto">
+<button class="w-full bg-brandGreen text-white px-4 py-2.5 rounded-lg text-sm font-semibold hover:bg-emerald-700 transition-colors flex items-center justify-center gap-2" data-purpose="cta-umkm">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg> 
+                Katalog Petani Lokal
+            </button>
+</div>
+</aside>
+<!-- Main Content -->
+<main class="flex-1 flex flex-col min-w-0 overflow-hidden">
+<!-- Header -->
+<header class="h-16 flex items-center justify-between px-8 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 flex-shrink-0">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">analytics</span>
+<h2 class="text-lg font-bold tracking-tight">Analitik Sisa Pangan (Food Waste)</h2>
+</div>
+<div class="flex items-center gap-6">
+<span class="text-sm font-medium text-slate-500">Nov 22, 2023</span>
+<button class="relative p-2 text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-colors">
+<span class="material-symbols-outlined">notifications</span>
+<span class="absolute top-2 right-2 size-2 bg-red-500 rounded-full border-2 border-white dark:border-slate-900"></span>
+</button>
+<div class="size-8 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center border border-slate-200 dark:border-slate-700">
+<span class="text-xs font-bold text-slate-600 dark:text-slate-300">B</span>
+</div>
+</div>
+</header>
+<!-- Scrollable Content -->
+<div class="flex-1 overflow-y-auto p-8 space-y-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+<!-- Column Left: Input & KPI -->
+<div class="lg:col-span-4 space-y-6">
+<!-- New Feature: Input Data Sisa Harian -->
+<div class="bg-white dark:bg-slate-900 p-6 rounded-xl shadow-sm border border-slate-200 dark:border-slate-800">
+<div class="flex items-center gap-2 mb-6">
+<span class="material-symbols-outlined text-primary">edit_note</span>
+<h3 class="font-bold text-slate-800 dark:text-white">Input Sisa Pangan Hari Ini</h3>
+</div>
+<div class="space-y-4">
+<div>
+<label class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1.5">Pilih Menu Target</label>
+<select class="w-full bg-slate-50 border-slate-200 rounded-lg text-sm focus:ring-primary focus:border-primary">
+<option>Makan Siang - Paket Nutrisi A</option>
+</select>
+</div>
+<div class="space-y-4">
+<div>
+<div class="flex justify-between mb-1">
+<label class="text-sm font-medium text-slate-700 dark:text-slate-300">Nasi Putih</label>
+<span class="text-xs font-bold text-slate-500">5%</span>
+</div>
+<input class="w-full h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-primary" type="range" value="5"/>
+</div>
+<div>
+<div class="flex justify-between mb-1">
+<label class="text-sm font-medium text-slate-700 dark:text-slate-300">Ayam Woku</label>
+<span class="text-xs font-bold text-slate-500">12%</span>
+</div>
+<input class="w-full h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-primary" type="range" value="12"/>
+</div>
+<div class="p-3 bg-red-50 dark:bg-red-900/10 rounded-lg border border-red-100 dark:border-red-900/30">
+<div class="flex justify-between mb-1">
+<label class="text-sm font-bold text-red-700 dark:text-red-400">Tumis Kangkung</label>
+<span class="text-sm font-bold text-red-600">35%</span>
+</div>
+<input class="w-full h-1.5 bg-red-200 rounded-lg appearance-none cursor-pointer accent-red-500" type="range" value="35"/>
+</div>
+</div>
+<button class="w-full mt-4 bg-primary hover:bg-emerald-600 text-white font-bold py-3 rounded-xl transition-all shadow-lg shadow-emerald-200/50 flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-xl">auto_fix_high</span>
+                                Simpan &amp; Analisis dengan AI
+                            </button>
+</div>
+</div>
+<!-- Simplified KPI Grid -->
+<div class="space-y-4">
+<div class="bg-white dark:bg-slate-900 p-5 rounded-xl border border-slate-100 dark:border-slate-800 shadow-sm">
+<p class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Rata-rata Sisa Mingguan</p>
+<div class="flex items-end justify-between">
+<h3 class="text-2xl font-bold text-emerald-600">12%</h3>
+<span class="text-[10px] font-bold px-2 py-0.5 bg-emerald-50 text-emerald-600 rounded flex items-center gap-0.5">
+<span class="material-symbols-outlined text-xs">trending_down</span> 2%
+                                </span>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-900 p-5 rounded-xl border border-slate-100 dark:border-slate-800 shadow-sm">
+<p class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Estimasi Kerugian Negara</p>
+<div class="flex items-end justify-between">
+<h3 class="text-2xl font-bold text-orange-500">Rp 125.000</h3>
+<span class="text-[10px] font-bold px-2 py-0.5 bg-orange-50 text-orange-600 rounded flex items-center gap-0.5">
+<span class="material-symbols-outlined text-xs">trending_up</span> 5%
+                                </span>
+</div>
+</div>
+</div>
+</div>
+<!-- Column Right: Chart -->
+<div class="lg:col-span-8">
+<div class="bg-white dark:bg-slate-900 p-8 rounded-xl shadow-sm border border-slate-200 dark:border-slate-800 h-full flex flex-col">
+<div class="flex items-center justify-between mb-8">
+<div>
+<h3 class="text-base font-bold">Tren Sisa Pangan Harian</h3>
+<p class="text-sm text-slate-500">7 Hari Terakhir (Rata-rata 14%)</p>
+</div>
+<div class="flex gap-2">
+<span class="flex items-center gap-1 text-xs text-slate-500"><span class="size-2 rounded-full bg-primary"></span> % Sisa</span>
+</div>
+</div>
+<!-- Bar Chart -->
+<div class="flex-1 flex items-end justify-between gap-4 px-2 min-h-[300px]">
+<div class="flex-1 flex flex-col items-center gap-2">
+<div class="w-full bg-slate-100 dark:bg-slate-800 rounded-t-lg relative" style="height: 60%">
+<div class="absolute bottom-0 w-full bg-primary/40 hover:bg-primary transition-colors rounded-t-lg" style="height: 100%"></div>
+</div>
+<span class="text-[10px] font-bold text-slate-400 uppercase">Sen</span>
+</div>
+<div class="flex-1 flex flex-col items-center gap-2">
+<div class="w-full bg-slate-100 dark:bg-slate-800 rounded-t-lg relative" style="height: 45%">
+<div class="absolute bottom-0 w-full bg-primary/40 hover:bg-primary transition-colors rounded-t-lg" style="height: 100%"></div>
+</div>
+<span class="text-[10px] font-bold text-slate-400 uppercase">Sel</span>
+</div>
+<div class="flex-1 flex flex-col items-center gap-2">
+<div class="w-full bg-slate-100 dark:bg-slate-800 rounded-t-lg relative" style="height: 80%">
+<div class="absolute bottom-0 w-full bg-primary/40 hover:bg-primary transition-colors rounded-t-lg" style="height: 100%"></div>
+</div>
+<span class="text-[10px] font-bold text-slate-400 uppercase">Rab</span>
+</div>
+<div class="flex-1 flex flex-col items-center gap-2">
+<div class="w-full bg-slate-100 dark:bg-slate-800 rounded-t-lg relative" style="height: 35%">
+<div class="absolute bottom-0 w-full bg-primary/40 hover:bg-primary transition-colors rounded-t-lg" style="height: 100%"></div>
+</div>
+<span class="text-[10px] font-bold text-slate-400 uppercase">Kam</span>
+</div>
+<div class="flex-1 flex flex-col items-center gap-2">
+<div class="w-full bg-slate-100 dark:bg-slate-800 rounded-t-lg relative" style="height: 55%">
+<div class="absolute bottom-0 w-full bg-primary/40 hover:bg-primary transition-colors rounded-t-lg" style="height: 100%"></div>
+</div>
+<span class="text-[10px] font-bold text-slate-400 uppercase">Jum</span>
+</div>
+<div class="flex-1 flex flex-col items-center gap-2">
+<div class="w-full bg-slate-100 dark:bg-slate-800 rounded-t-lg relative" style="height: 90%">
+<div class="absolute bottom-0 w-full bg-primary/40 hover:bg-primary transition-colors rounded-t-lg" style="height: 100%"></div>
+</div>
+<span class="text-[10px] font-bold text-slate-400 uppercase">Sab</span>
+</div>
+<div class="flex-1 flex flex-col items-center gap-2">
+<div class="w-full bg-slate-100 dark:bg-slate-800 rounded-t-lg relative" style="height: 25%">
+<div class="absolute bottom-0 w-full bg-primary/40 hover:bg-primary transition-colors rounded-t-lg" style="height: 100%"></div>
+</div>
+<span class="text-[10px] font-bold text-slate-400 uppercase">Min</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Row 3: AI Recommendation Banner (Updated) -->
+<div class="bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-100 dark:border-emerald-800 p-8 rounded-2xl shadow-sm flex flex-col md:flex-row gap-6 items-center">
+<div class="p-4 bg-white dark:bg-slate-900 rounded-2xl shadow-sm text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-4xl filled-icon">auto_awesome</span>
+</div>
+<div class="flex-1 text-center md:text-left">
+<h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">🔄 Rekomendasi Adaptif AI untuk Minggu Depan</h3>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed max-w-4xl">
+                        Sistem mendeteksi <span class="font-bold text-red-500">35% sisa</span> pada <strong>Tumis Kangkung</strong> hari ini. Rekomendasi AI: Ganti dengan <span class="text-primary font-bold">Sayur Bayam</span> untuk menu minggu depan guna menekan kerugian sebesar <span class="font-bold text-orange-600">Rp 125.000</span>.
+                    </p>
+</div>
+<div class="flex-shrink-0">
+<button class="px-8 py-3 bg-primary hover:bg-emerald-600 text-white font-bold rounded-xl transition-all shadow-lg shadow-emerald-200/50 flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">settings_suggest</span>
+                        Terapkan Rekomendasi
+                    </button>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>

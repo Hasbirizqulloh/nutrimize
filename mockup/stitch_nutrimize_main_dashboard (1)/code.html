@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#059669",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221610",
+                        "emerald-custom": "#10b981",
+                        "whatsapp-dark": "#075e54",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<title>Nutrimize - Pasar Logistik &amp; B2B Matchmaking</title>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased">
+<div class="flex h-screen overflow-hidden">
+<!-- Sidebar (STRICTLY PRESERVE Style) -->
+<aside class="w-64 flex-shrink-0 bg-white dark:bg-slate-900 border-r border-slate-200 dark:border-slate-800 flex flex-col justify-between p-4 shadow-sm z-20">
+<div class="flex flex-col gap-6">
+<div class="flex items-center gap-3 px-2">
+<div class="bg-emerald-600 rounded-full size-10 flex items-center justify-center text-white">
+<span class="material-symbols-outlined">energy_savings_leaf</span>
+</div>
+<h1 class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">Nutrimize</h1>
+</div>
+<nav class="flex flex-col gap-1">
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="text-sm font-medium">Dasbor Utama</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#">
+<span class="material-symbols-outlined">calculate</span>
+<span class="text-sm font-medium">Kalkulator Menu AI</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-xl bg-emerald-custom/10 text-emerald-custom" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">shopping_cart</span>
+<span class="text-sm font-bold">Pasar Logistik UMKM</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#">
+<span class="material-symbols-outlined">bar_chart</span>
+<span class="text-sm font-medium">Analitik Sisa Pangan</span>
+</a>
+</nav>
+</div>
+<button class="w-full flex items-center justify-center gap-2 rounded-xl h-11 px-4 text-white text-sm font-bold bg-emerald-600 hover:bg-emerald-700 transition-all shadow-md">
+<span class="material-symbols-outlined text-sm">agriculture</span>
+<span class="truncate">Katalog Petani Lokal</span>
+</button>
+</aside>
+<!-- Main Content Area -->
+<div class="flex-1 flex flex-col min-w-0 overflow-hidden">
+<!-- Header -->
+<header class="h-16 flex items-center justify-between border-b border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md px-8 z-10">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-emerald-600">local_shipping</span>
+<h2 class="text-lg font-bold text-slate-900 dark:text-white">Pasar Logistik &amp; B2B Matchmaking</h2>
+</div>
+<div class="flex items-center gap-6">
+<div class="hidden md:flex items-center gap-2 text-slate-500 dark:text-slate-400 text-sm font-medium">
+<span class="material-symbols-outlined text-sm">calendar_today</span>
+<span>Senin, 24 Mei 2024</span>
+</div>
+<button class="p-2 text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full relative">
+<span class="material-symbols-outlined">notifications</span>
+<span class="absolute top-2 right-2 w-2 h-2 bg-red-500 rounded-full border-2 border-white dark:border-slate-900"></span>
+</button>
+<div class="flex items-center gap-3 pl-4 border-l border-slate-200 dark:border-slate-800">
+<div class="size-8 rounded-full bg-emerald-custom flex items-center justify-center text-white font-bold text-sm">B</div>
+</div>
+</div>
+</header>
+<!-- Scrollable Content -->
+<main class="flex-1 overflow-auto p-6 bg-slate-50 dark:bg-background-dark/50">
+<div class="max-w-7xl mx-auto h-full flex flex-col gap-6">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 h-full">
+<!-- Left Pane: Map Visualization -->
+<div class="lg:col-span-7 flex flex-col bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 overflow-hidden">
+<div class="p-5 border-b border-slate-100 dark:border-slate-800 flex justify-between items-center">
+<h3 class="font-bold text-slate-900 dark:text-white flex items-center gap-2">
+<span class="material-symbols-outlined text-emerald-600">map</span>
+                                Peta Pasokan &amp; Radius Lokal
+                            </h3>
+<div class="flex items-center gap-4 text-xs font-medium text-slate-500">
+<span class="flex items-center gap-1"><span class="w-3 h-3 rounded-full border border-emerald-600 bg-emerald-600/20"></span> 5km</span>
+<span class="flex items-center gap-1"><span class="w-3 h-3 rounded-full border border-emerald-600/40 bg-emerald-600/5"></span> 10km</span>
+</div>
+</div>
+<div class="flex-1 relative bg-slate-200 dark:bg-slate-800 overflow-hidden">
+<!-- Mock Map Placeholder -->
+<div class="absolute inset-0 bg-cover bg-center opacity-80" data-alt="Stylized map of Banyuwangi region with supply routes" data-location="Banyuwangi" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDFA8QvvHeaE_xAZ12pJPlnPAlwyxHsdXl8tD-G2EV7Qe8F3M_aFNPHDPwqDY9c6S0Q9C4I5g2-X8UgLHPOOhK1J-X6Y6B0T81lqiUk_ee8ZOv68PEoQcXipb9IMXyiPtKoAz9_7K84e_dVt5AKrO8yaz2IcVTtC8RFl4Q3ynGgzqnN_ds_PpOuvUyS7I1evdLOqEB-UwnnaQZ9YMf7aPa14RpTlBZApzFL7ioz6SIF5TSIsTRj-pwWHz0ydgJKC6ntmOwf8Ns2SYRq');"></div>
+<!-- Central Pin -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 group cursor-pointer">
+<div class="relative">
+<div class="absolute -inset-4 bg-emerald-600/20 rounded-full animate-ping"></div>
+<div class="bg-emerald-600 text-white p-2 rounded-full shadow-lg border-2 border-white dark:border-slate-900 relative">
+<span class="material-symbols-outlined block">home_pin</span>
+</div>
+<div class="absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-white dark:bg-slate-800 px-3 py-1.5 rounded-lg shadow-xl border border-slate-200 dark:border-slate-700 whitespace-nowrap">
+<p class="text-xs font-bold text-slate-900 dark:text-white">Dapur SPPG Banyuwangi</p>
+</div>
+</div>
+</div>
+<!-- Radius Visuals (CSS Circles) -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-emerald-600/30 bg-emerald-600/5 rounded-full w-64 h-64 pointer-events-none"></div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-emerald-600/10 bg-emerald-600/5 rounded-full w-[32rem] h-[32rem] pointer-events-none"></div>
+<!-- Supplier Pins with Labels -->
+<div class="absolute top-1/3 left-1/3 z-10 cursor-pointer flex flex-col items-center">
+<div class="bg-emerald-custom text-white p-1 rounded-full shadow-md border-2 border-white">
+<span class="material-symbols-outlined text-sm block">verified</span>
+</div>
+<div class="mt-1 bg-white/90 dark:bg-slate-800/90 px-2 py-0.5 rounded text-[10px] font-bold shadow-sm whitespace-nowrap border border-slate-200 dark:border-slate-700">Gapoktan Sayur Licin</div>
+</div>
+<div class="absolute bottom-1/4 right-1/3 z-10 cursor-pointer flex flex-col items-center">
+<div class="bg-emerald-custom text-white p-1 rounded-full shadow-md border-2 border-white">
+<span class="material-symbols-outlined text-sm block">verified</span>
+</div>
+<div class="mt-1 bg-white/90 dark:bg-slate-800/90 px-2 py-0.5 rounded text-[10px] font-bold shadow-sm whitespace-nowrap border border-slate-200 dark:border-slate-700">Nelayan Muncar</div>
+</div>
+<div class="absolute top-1/2 right-1/4 z-10 cursor-pointer flex flex-col items-center">
+<div class="bg-emerald-custom text-white p-1 rounded-full shadow-md border-2 border-white">
+<span class="material-symbols-outlined text-sm block">verified</span>
+</div>
+<div class="mt-1 bg-white/90 dark:bg-slate-800/90 px-2 py-0.5 rounded text-[10px] font-bold shadow-sm whitespace-nowrap border border-slate-200 dark:border-slate-700">Peternak Mandiri</div>
+</div>
+<!-- Map Legend Overlay -->
+<div class="absolute bottom-4 left-4 right-4 bg-white/90 dark:bg-slate-900/90 backdrop-blur-sm p-3 rounded-xl shadow-lg border border-slate-200 dark:border-slate-700">
+<p class="text-xs font-medium text-slate-600 dark:text-slate-400">
+                                    Menampilkan: <span class="text-emerald-600 font-bold">Radius Pasokan Gizi 5km &amp; 10km</span> di area Banyuwangi Kota. 
+                                    Semua mitra dalam radius telah melewati audit higienitas.
+                                </p>
+</div>
+</div>
+</div>
+<!-- Right Pane: Catalog -->
+<div class="lg:col-span-5 flex flex-col gap-6">
+<div class="bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 flex flex-col h-full overflow-hidden">
+<!-- NEW Shopping List Section -->
+<div class="p-5 border-b border-slate-100 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-800/20">
+<h4 class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-3 flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">inventory_2</span>
+                                    Daftar Belanja Gizi Esok Hari (Hasil Menu AI)
+                                </h4>
+<div class="grid grid-cols-3 gap-3">
+<div class="bg-white dark:bg-slate-800 p-2 rounded-xl border border-slate-100 dark:border-slate-700 shadow-sm flex flex-col items-center text-center">
+<span class="text-xl mb-1">🐔</span>
+<p class="text-[10px] font-bold text-slate-900 dark:text-white truncate w-full">Daging Ayam</p>
+<p class="text-[11px] font-bold text-emerald-600">12 kg</p>
+</div>
+<div class="bg-white dark:bg-slate-800 p-2 rounded-xl border border-slate-100 dark:border-slate-700 shadow-sm flex flex-col items-center text-center">
+<span class="text-xl mb-1">🥬</span>
+<p class="text-[10px] font-bold text-slate-900 dark:text-white truncate w-full">Sayur Bayam</p>
+<p class="text-[11px] font-bold text-emerald-600">8 kg</p>
+</div>
+<div class="bg-white dark:bg-slate-800 p-2 rounded-xl border border-slate-100 dark:border-slate-700 shadow-sm flex flex-col items-center text-center">
+<span class="text-xl mb-1">🐟</span>
+<p class="text-[10px] font-bold text-slate-900 dark:text-white truncate w-full">Ikan Tongkol</p>
+<p class="text-[11px] font-bold text-emerald-600">10 kg</p>
+</div>
+</div>
+</div>
+<div class="p-5 border-b border-slate-100 dark:border-slate-800">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="font-bold text-slate-900 dark:text-white text-base">Katalog Mitra Pangan Cerdas</h3>
+<p class="text-[11px] text-slate-500 mt-0.5 flex items-center gap-1">
+<span class="w-2 h-2 bg-emerald-custom rounded-full animate-pulse"></span>
+                                            PIHPS API Price Check: Active
+                                        </p>
+</div>
+<button class="p-2 text-slate-400 hover:text-slate-600">
+<span class="material-symbols-outlined">tune</span>
+</button>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<div class="relative">
+<select class="w-full bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 rounded-xl text-xs font-medium focus:ring-emerald-600 focus:border-emerald-600 py-2 px-3">
+<option>Zona: Banyuwangi</option>
+</select>
+</div>
+<div class="relative">
+<select class="w-full bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 rounded-xl text-xs font-medium focus:ring-emerald-600 focus:border-emerald-600 py-2 px-3">
+<option>Radius: &lt;10 km</option>
+</select>
+</div>
+</div>
+</div>
+<div class="flex-1 overflow-auto p-5 space-y-4">
+<!-- Supplier Card 1 -->
+<div class="bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-4 border border-slate-100 dark:border-slate-700 hover:border-emerald-600/30 transition-all group">
+<div class="flex gap-4">
+<div class="size-12 rounded-xl bg-emerald-custom/10 text-emerald-custom flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1">eco</span>
+</div>
+<div class="flex-1">
+<div class="flex items-center gap-1.5 mb-0.5">
+<span class="material-symbols-outlined text-emerald-custom text-sm">verified</span>
+<h4 class="text-sm font-bold text-slate-900 dark:text-white">Gapoktan Sayur Licin</h4>
+</div>
+<div class="flex items-center gap-1 mb-2 text-emerald-custom font-bold text-[10px]">
+<span class="material-symbols-outlined text-[12px]">check_circle</span>
+                                                Pecocokan Menu AI: Menyediakan Sayur Bayam
+                                            </div>
+<p class="text-xs text-slate-500 dark:text-slate-400 mb-3">Sayur Bayam, Tomat, Cabe segar dari lereng Ijen.</p>
+<div class="flex items-center justify-between">
+<div>
+<p class="text-[10px] uppercase tracking-wider text-slate-400 font-semibold">Harga Estimasi</p>
+<p class="text-sm font-bold text-emerald-600">Rp 15.000 <span class="text-[10px] text-slate-400 font-normal">/ kg</span> <span class="ml-1 text-[10px] bg-emerald-600/10 px-1 rounded">Bawah Pasar</span></p>
+</div>
+<button class="bg-emerald-600 hover:bg-emerald-700 text-white text-[10px] font-bold py-2 px-3 rounded-xl flex items-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-xs">chat</span>
+                                                    Chat
+                                                </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Supplier Card 2 -->
+<div class="bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-4 border border-slate-100 dark:border-slate-700 hover:border-emerald-600/30 transition-all group">
+<div class="flex gap-4">
+<div class="size-12 rounded-xl bg-blue-500/10 text-blue-500 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1">set_meal</span>
+</div>
+<div class="flex-1">
+<div class="flex items-center gap-1.5 mb-0.5">
+<span class="material-symbols-outlined text-emerald-custom text-sm">verified</span>
+<h4 class="text-sm font-bold text-slate-900 dark:text-white">Nelayan Muncar</h4>
+</div>
+<div class="flex items-center gap-1 mb-2 text-emerald-custom font-bold text-[10px]">
+<span class="material-symbols-outlined text-[12px]">check_circle</span>
+                                                Pecocokan Menu AI: Menyediakan Ikan Tongkol
+                                            </div>
+<p class="text-xs text-slate-500 dark:text-slate-400 mb-3">Ikan Tongkol Segar, Ikan Layang kualitas ekspor.</p>
+<div class="flex items-center justify-between">
+<div>
+<p class="text-[10px] uppercase tracking-wider text-slate-400 font-semibold">Harga Estimasi</p>
+<p class="text-sm font-bold text-slate-900 dark:text-white">Rp 28.000 <span class="text-[10px] text-slate-400 font-normal">/ kg</span></p>
+</div>
+<button class="bg-emerald-600 hover:bg-emerald-700 text-white text-[10px] font-bold py-2 px-3 rounded-xl flex items-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-xs">chat</span>
+                                                    Chat
+                                                </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 3 (Empty State / Placeholder) -->
+<div class="border-2 border-dashed border-slate-200 dark:border-slate-800 rounded-2xl p-6 flex flex-col items-center justify-center text-center opacity-60">
+<span class="material-symbols-outlined text-slate-300 dark:text-slate-600 text-3xl mb-2">person_search</span>
+<p class="text-[11px] font-medium text-slate-400">Gunakan filter untuk menemukan lebih banyak mitra lokal terverifikasi</p>
+</div>
+</div>
+<!-- Updated Final Order UX (Bottom) -->
+<div class="p-5 bg-white dark:bg-slate-900 border-t border-slate-100 dark:border-slate-800">
+<button class="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-4 px-6 rounded-2xl flex items-center justify-center gap-3 transition-all shadow-lg group">
+<span class="material-symbols-outlined">send_and_archive</span>
+<span class="text-sm font-bold">Konfirmasi &amp; Kirim Purchase Order ke UMKM (via WhatsApp Bot)</span>
+</button>
+<button class="w-full mt-3 text-xs font-bold text-emerald-600 hover:underline">Lihat Semua 24 Mitra Terverifikasi</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+</body></html>

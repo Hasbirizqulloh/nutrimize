@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#10b981", // Emerald Green for Nutrimize brand
+                        "primary-dark": "#064e3b",
+                        "background-light": "#f8fafa",
+                        "background-dark": "#022c22",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Public Sans', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .filled-icon { font-variation-settings: 'FILL' 1; }
+    </style>
+<style>
+        .text-brandGreen { color: #219653; }
+        .bg-brandGreen { background-color: #219653; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen">
+<div class="flex h-screen overflow-hidden">
+<!-- Left Sidebar -->
+<aside class="w-64 bg-white border-r border-gray-200 hidden md:flex flex-col sticky top-0 h-screen">
+<div class="space-y-8">
+<div class="p-6 border-b border-gray-100 flex items-center gap-2">
+<div class="w-8 h-8 bg-brandGreen rounded-lg flex items-center justify-center" style="background-color: #219653;">
+<svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<span class="text-2xl font-bold text-brandGreen tracking-tight" style="color: #219653;">Nutrimize</span>
+</div>
+<nav class="flex-1 px-4 py-6 space-y-1">
+<a class="flex items-center px-4 py-3 text-sm font-medium text-slate-600 hover:bg-gray-50 rounded-lg transition-colors" href="#">
+<svg class="w-5 h-5 mr-3 text-slate-400" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M4 6a2 2 0 012-2h2a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v12a2 2 0 01-2 2h-2a2 2 0 01-2-2V6z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+                        Dasbor Utama
+                    </a>
+<a class="flex items-center px-4 py-3 text-sm font-semibold text-brandGreen bg-green-50 rounded-lg group" href="#" style="color: #219653; background-color: #f0fdf4;">
+<svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+                        Kalkulator Menu AI
+                    </a>
+<a class="flex items-center px-4 py-3 text-sm font-medium text-slate-600 hover:bg-gray-50 rounded-lg transition-colors" href="#">
+<svg class="w-5 h-5 mr-3 text-slate-400" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+                        Pasar Logistik UMKM
+                    </a>
+<a class="flex items-center px-4 py-3 text-sm font-medium text-slate-600 hover:bg-gray-50 rounded-lg transition-colors" href="#">
+<svg class="w-5 h-5 mr-3 text-slate-400" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+                        Analitik Sisa Pangan
+                    </a>
+</nav>
+</div>
+<div class="p-4 border-t border-gray-100">
+<button class="w-full bg-brandGreen text-white px-4 py-2.5 rounded-lg text-sm font-semibold hover:bg-green-700 transition-colors flex items-center justify-center gap-2" style="background-color: #219653;">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+                    Katalog Petani Lokal
+                </button>
+</div>
+</aside>
+<!-- Main Content -->
+<main class="flex-1 flex flex-col overflow-hidden">
+<!-- Top Header -->
+<header class="h-16 border-b border-slate-200 dark:border-emerald-900 bg-white dark:bg-emerald-950/20 px-8 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">auto_awesome</span>
+<h2 class="text-lg font-bold">Kalkulator Menu AI (OR-Tools)</h2>
+</div>
+<div class="flex items-center gap-6">
+<span class="text-sm text-slate-500 dark:text-emerald-300/60 font-medium">Selasa, 17 Maret 2026</span>
+<div class="flex items-center gap-4 border-l border-slate-200 dark:border-emerald-900 pl-6">
+<button class="relative p-2 text-slate-400 hover:text-primary transition-colors">
+<span class="material-symbols-outlined">notifications</span>
+<span class="absolute top-2 right-2 w-2 h-2 bg-red-500 rounded-full border-2 border-white dark:border-emerald-950"></span>
+</button>
+<div class="w-9 h-9 rounded-full bg-emerald-100 dark:bg-emerald-800 flex items-center justify-center text-emerald-700 dark:text-emerald-100 font-bold border border-emerald-200 dark:border-emerald-700">
+                            B
+                        </div>
+</div>
+</div>
+</header>
+<!-- Content Area -->
+<div class="flex-1 overflow-y-auto p-8 bg-background-light dark:bg-background-dark">
+<div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
+<!-- Left Column: Optimization Settings -->
+<div class="space-y-6">
+<div class="bg-white dark:bg-emerald-900/10 p-6 rounded-xl border border-slate-200 dark:border-emerald-800 shadow-sm">
+<h3 class="text-lg font-bold mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">settings_input_component</span>
+                                Pengaturan Optimasi
+                            </h3>
+<div class="space-y-6">
+<!-- Slider: Target Budget -->
+<div>
+<div class="flex justify-between items-center mb-2">
+<label class="text-sm font-semibold text-slate-700 dark:text-emerald-200">Batas Anggaran per Porsi</label>
+<span class="text-primary font-bold">Rp 10.000</span>
+</div>
+<div class="relative w-full h-2 bg-slate-100 dark:bg-emerald-900/40 rounded-full">
+<div class="absolute left-0 top-0 h-full w-2/5 bg-primary rounded-full"></div>
+<div class="absolute left-[40%] top-1/2 -translate-y-1/2 w-5 h-5 bg-white border-2 border-primary rounded-full shadow-md cursor-pointer"></div>
+</div>
+</div>
+<!-- Input: Portions -->
+<div>
+<label class="text-sm font-semibold text-slate-700 dark:text-emerald-200 block mb-2">Jumlah Porsi</label>
+<input class="w-full bg-slate-50 dark:bg-emerald-900/20 border border-slate-200 dark:border-emerald-800 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" type="number" value="250"/>
+</div>
+<!-- Dropdown: Regional Context -->
+<div>
+<label class="text-sm font-semibold text-slate-700 dark:text-emerald-200 block mb-2">Konteks Wilayah (API)</label>
+<div class="relative">
+<select class="w-full appearance-none bg-slate-50 dark:bg-emerald-900/20 border border-slate-200 dark:border-emerald-800 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all">
+<option>Banyuwangi, Jawa Timur</option>
+<option>Surabaya, Jawa Timur</option>
+<option>Malang, Jawa Timur</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-slate-400">expand_more</span>
+</div>
+</div>
+<!-- Connection Status -->
+<div class="flex flex-wrap gap-4 pt-2">
+<div class="flex items-center gap-2 px-3 py-1.5 bg-emerald-50 dark:bg-emerald-900/30 rounded-full border border-emerald-100 dark:border-emerald-800/50">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="text-xs font-medium text-emerald-700 dark:text-emerald-400 uppercase tracking-wider">PIHPS Price API: Terhubung</span>
+</div>
+<div class="flex items-center gap-2 px-3 py-1.5 bg-emerald-50 dark:bg-emerald-900/30 rounded-full border border-emerald-100 dark:border-emerald-800/50">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="text-xs font-medium text-emerald-700 dark:text-emerald-400 uppercase tracking-wider">Nutrition DB: Terhubung</span>
+</div>
+</div>
+</div>
+</div>
+<button class="w-full py-4 bg-primary hover:bg-emerald-500 text-white font-bold rounded-xl shadow-lg shadow-emerald-500/20 transition-all flex items-center justify-center gap-2 group">
+<span class="material-symbols-outlined group-hover:rotate-12 transition-transform">auto_awesome</span>
+                            ✨ Buat Menu Optimal
+                        </button>
+</div>
+<!-- Right Column: Today's Generated Menu -->
+<div class="space-y-6">
+<div class="bg-white dark:bg-emerald-900/10 p-6 rounded-xl border border-slate-200 dark:border-emerald-800 shadow-sm h-full">
+<div class="flex justify-between items-start mb-6">
+<h3 class="text-lg font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">restaurant</span>
+                                    Menu Hasil Generasi Hari Ini
+                                </h3>
+<span class="px-2 py-1 bg-primary/10 text-primary text-[10px] font-bold rounded uppercase tracking-widest">Optimasi Berhasil</span>
+</div>
+<!-- Menu List -->
+<div class="grid grid-cols-2 gap-4 mb-8">
+<div class="p-3 bg-slate-50 dark:bg-emerald-900/20 rounded-lg border border-slate-100 dark:border-emerald-800 flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-emerald-100 dark:bg-emerald-800 flex items-center justify-center text-primary font-bold">1</div>
+<span class="font-medium">Nasi Putih</span>
+</div>
+<div class="p-3 bg-slate-50 dark:bg-emerald-900/20 rounded-lg border border-slate-100 dark:border-emerald-800 flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-emerald-100 dark:bg-emerald-800 flex items-center justify-center text-primary font-bold">2</div>
+<span class="font-medium">Ikan Tongkol</span>
+</div>
+<div class="p-3 bg-slate-50 dark:bg-emerald-900/20 rounded-lg border border-slate-100 dark:border-emerald-800 flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-emerald-100 dark:bg-emerald-800 flex items-center justify-center text-primary font-bold">3</div>
+<span class="font-medium">Tempe Goreng</span>
+</div>
+<div class="p-3 bg-slate-50 dark:bg-emerald-900/20 rounded-lg border border-slate-100 dark:border-emerald-800 flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-emerald-100 dark:bg-emerald-800 flex items-center justify-center text-primary font-bold">4</div>
+<span class="font-medium">Sayur Bayam</span>
+</div>
+</div>
+<!-- Progress Bars Validation -->
+<div class="space-y-4 mb-8">
+<div>
+<div class="flex justify-between text-xs font-bold mb-1 uppercase text-slate-500 dark:text-emerald-400">
+<span>BIAYA</span>
+<span>Rp 9.800 / Rp 10rb</span>
+</div>
+<div class="h-2 w-full bg-slate-100 dark:bg-emerald-900/40 rounded-full overflow-hidden">
+<div class="h-full w-[98%] bg-primary"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-xs font-bold mb-1 uppercase text-slate-500 dark:text-emerald-400">
+<span>KALORI</span>
+<span>820 / 850 kkal</span>
+</div>
+<div class="h-2 w-full bg-slate-100 dark:bg-emerald-900/40 rounded-full overflow-hidden">
+<div class="h-full w-[96%] bg-primary"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-xs font-bold mb-1 uppercase text-slate-500 dark:text-emerald-400">
+<span>PROTEIN</span>
+<span>17g / Target 15g</span>
+</div>
+<div class="h-2 w-full bg-slate-100 dark:bg-emerald-900/40 rounded-full overflow-hidden">
+<div class="h-full w-full bg-primary"></div>
+</div>
+</div>
+</div>
+<!-- Alert Box: AI Substitution -->
+<div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-100 dark:border-blue-800/50 p-5 rounded-xl">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-blue-600 dark:text-blue-400 text-[20px]">lightbulb</span>
+<h4 class="text-sm font-bold text-blue-800 dark:text-blue-300">💡 Substitusi Cerdas AI Gemini</h4>
+</div>
+<p class="text-xs leading-relaxed text-blue-700 dark:text-blue-200/80 mb-4">
+                                    Harga daging ayam di Banyuwangi naik 25% hari ini. AI Gemini otomatis mengganti ayam dengan Ikan Tongkol lokal untuk menjaga anggaran tetap di bawah Rp 10.000 sambil mempertahankan 17g protein.
+                                </p>
+<div class="flex gap-2">
+<button class="flex-1 py-2 px-3 bg-emerald-950 text-white text-xs font-bold rounded-lg hover:bg-black transition-colors">
+                                        Terima Substitusi AI
+                                    </button>
+<button class="flex-1 py-2 px-3 border border-emerald-900/20 dark:border-emerald-700 text-emerald-900 dark:text-emerald-300 text-xs font-bold rounded-lg hover:bg-white/50 transition-colors">
+                                        Buat Ulang
+                                    </button>
+</div>
+</div>
+<div class="mt-8 space-y-3">
+<button class="w-full py-4 bg-primary hover:bg-emerald-500 text-white font-bold rounded-xl shadow-lg shadow-emerald-500/20 transition-all flex items-center justify-center gap-2 group text-sm md:text-base">
+        Teruskan Kebutuhan Bahan ke Pasar Logistik ➔
+    </button>
+<p class="text-center text-[10px] md:text-xs text-slate-500 dark:text-emerald-400/60 font-medium">
+        Daftar belanja akan diotomatisasi untuk pencocokan UMKM.
+    </p>
+</div></div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>
