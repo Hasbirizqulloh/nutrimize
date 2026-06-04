@@ -20,6 +20,13 @@
 
 [🔗 Live Prototype](https://github.com/Hasbirizqulloh/nutrimize) · [🎨 UI Mockup](https://bit.ly/mockup-nutrimize) · [📄 Proposal](#lampiran)
 
+<br/><br/>
+
+<a href="https://drive.google.com/file/d/120Ye_bn68A-A8aNeW0o4ssv4QtIj56f9/view?usp=sharing" target="_blank">
+  <img src="mockup/stitch_nutrimize_main_dashboard%20(3)/screen.png" width="800" alt="Video Demo Nutrimize" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border: 1px solid #e2e8f0;"/>
+  <br/><br/>
+  <img src="https://img.shields.io/badge/▶_KLIK_UNTUK_MENONTON_VIDEO_DEMO-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Tonton Video Demo" />
+</a>
 </div>
 
 ---
