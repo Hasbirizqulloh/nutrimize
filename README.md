@@ -16,9 +16,7 @@
 
 ---
 
-**SaaS ERP & Upstream Copilot** berbasis kecerdasan buatan yang membantu pengelola dapur Program Makan Bergizi Gratis (MBG) meracik menu gizi presisi, menghubungkan langsung ke UMKM lokal, dan menghasilkan laporan audit yang kebal manipulasi — dalam satu klik.
-
-[🔗 Live Prototype](https://github.com/Hasbirizqulloh/nutrimize) · [🎨 UI Mockup](https://bit.ly/mockup-nutrimize) · [📄 Proposal](#lampiran)
+**SaaS ERP & Upstream Copilot** berbasis kecerdasan buatan yang membantu pengelola dapur Program Makan Bergizi Gratis (MBG) meracik menu gizi presisi, menghubungkan langsung ke UMKM lokal, dan menghasilkan laporan audit yang kebal manipulasi — dalam satu klik.s
 
 <br/><br/>
 
